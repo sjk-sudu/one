@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+	<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title></title>
+	
+	    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+		
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.tou{
+				width: 100%;
+				height: 40px;
+				background-color: #32353E;
+			}
+			.logo{
+				position: absolute;
+				top: 10px;
+				left: 10px;
+			}
+			.t1{
+				position: absolute;
+				top: 10px;
+				left: 50px;
+			}
+			.t2{
+				width: 100px;
+				height: 40px;
+				position: absolute;
+				top: 0;
+				left: 250px;
+				text-align: center;
+				display: inline-block;
+				border-left: 0.5px solid  darkgray;
+				border-right: 0.5px solid  darkgray;
+				padding-top:10px ;
+			}
+			.t3{
+				width: 100px;
+				height: 40px;
+				position: absolute;
+				top: 0;
+				left: 350px;
+				text-align: center;
+				display: inline-block;
+				border-left: 0.5px solid  darkgray;
+				border-right: 0.5px solid  darkgray;
+				padding-top:10px ;
+			}
+			a{
+				text-decoration: none;
+			}
+			.t4{
+				font-family: "宋体";
+				color: #EC4B5E;
+				width: 100px;
+				height: 30px;
+				position: absolute;
+				top: 5px;
+				left: 1100px;
+				text-align: center;
+				display: inline-block;
+				border: 0.5px solid  #EC4B5E;
+				padding-top:5px ;
+			}
+			.t5{
+				font-family: "宋体";
+				background-color: #EC4B5E;
+				color: #EFEFEF;
+				width: 100px;
+				height: 30px;
+				position: absolute;
+				top: 5px;
+				left: 1200px;
+				text-align: center;
+				display: inline-block;
+				border: 0.5px solid  #EC4B5E;
+				padding-top:5px ;
+			}
+			.tou1{
+				position: relative;
+				left: 300px;
+			}
+			.tou3{
+				position: relative;
+				left: 5%;
+				bottom: 0px;
+			}
+			.nr{
+				height: 1000px;
+				width: 1100px;
+				/* background-color: #0090DA; */
+				margin: 0 auto;
+			}
+			.t{
+				height: 550px;
+				width: 550px;
+				/* background-color: #008000; */
+				display: inline-block;
+				position: relative;
+				top: 100px;
+			}
+			.dl{
+				height: 700px;
+				width: 550px;
+				/* background-color: #323232; */
+				display: inline-block;
+				position: absolute;
+				left: 700px;
+			}
+			.dl1{
+				width: 550px;
+				height: 50px;
+				/* background-color: #008000; */
+				text-align: center;
+				position: relative;
+				top: 80px;
+			}
+				
+			.shuru{
+				width: 300px;
+				position: relative;
+				top: 150px;
+				left: 130px;
+			}
+			.dl2{
+				width: 300px;
+				height: 50px;
+				background-color: #D84141;
+				font-size: 1.5em;
+				position: relative;
+				top: 200px;
+				left: 125px;
+				text-align: center;
+				padding-top: 10px;
+			}
+			.dl2>a:link{
+				color: white;
+				text-decoration: none;
+			}
+			.dl2>a:visited{
+				color: white;
+				text-decoration: none;
+			}
+			.dl3{
+				width: 200px;
+				height: 50px;
+				/* background-color: red; */
+				position: relative;
+				top: 225px;
+				left: 180px;
+				text-align: center;
+			}
+			.dl3>a:link{
+				color: #000000;
+			}
+			.dl3>a:visited{
+				color: #000000;
+			}
+			.dl4{
+				width: 550px;
+				height: 30px;
+				/* background-color: #008000; */
+				display: inline-block;
+				position: relative;
+				top: 230px;
+			}
+
+
+			.h2{
+				width: 550px;
+				height: 20px;
+				/* background-color: #0000FF; */
+				display: inline-block;
+				position: absolute;
+				bottom: 5px;
+				border-bottom: 1px solid #525252;
+				
+			}
+			.h3{
+				width: 50px;
+				height: 20px;
+				background-color: white;
+				display: inline-block;
+				position: absolute;
+				bottom: 0px;
+				left: 250px;
+				text-align: center;
+				z-index: 100;
+			}
+			
+			.dl4>hr{
+				color: #000000;
+			}
+			.dl5{
+				width: 250px;
+				height: 40px;
+				/* background-color: #00CED1; */
+				position: relative;
+				top: 250px;
+				left: 155px;
+				text-align: center;
+				padding-top: 5px;
+				border: 1px solid red;
+			}
+			a:hover{
+				text-decoration: none;
+			}
+			.dl5>a:link{
+				color: red;
+			}
+			.dl5>a:visited{
+				color: red;
+			}
+			hr{
+				color: #000000;
+			}
+			
+			
+			
+			
+			.di{
+				height: 420px;
+				width: 100%;
+				background-color: #242424;
+				position: absolute;
+				top: 1000px;
+				color: #DEDEDE;
+				z-index: 20;
+				
+			}
+			.d1{
+				height: 50px;
+				width: 300px;
+				position: absolute;
+				top: 20px;
+				left: 400px;
+				z-index: 10;
+			}
+			.d2{
+				width: 300px;
+				position: absolute;
+				top: 70px;
+				left: 400px;
+			}
+			.d3{
+				width: 300px;
+				position: absolute;
+				top: 120px;
+				left: 400px;
+			}
+			.d4{
+				width: 200px;
+				height: 150px;
+				position: absolute;
+				top: 20px;
+				left: 900px;
+				display: inline-block;
+			}
+			.youxia{
+				display: inline-block;
+				position: relative;
+				top: 20px;
+				left: 1300px;
+			}
+			.t6{
+				/* width: 500px; */
+				display: inline-block;
+				position: relative; 
+				bottom: 0px;
+				left: 0;
+			}
+			.t7{
+				display: inline-block;
+				position: relative; 
+				bottom: 0px;
+				left: 30px;
+			}
+			.t8{
+				display: inline-block;
+				position: relative;
+				bottom: 0px;
+				left: 60px;
+			}
+			.qq1{
+				width: 70px;
+				height: 70px;
+				/* background-color: #0000FF; */
+				display: inline-block;
+				position: relative;
+				right: 25px;
+				top: 20px;
+				
+			}
+			
+			.wx{
+				width: 50px;
+				height: 50px;
+				/* background-color: #0000FF; */
+				display: inline-block;
+				position: relative;
+				right: 20px;
+				top: 20px;
+				border-radius: 50%;
+			}
+			.wb{
+				width: 50px;
+				height: 50px;
+				/* background-color: #0000FF; */
+				display: inline-block;
+				position: relative;
+				top: 20px;
+				left: 5px;
+				border-radius: 50%;
+			}
+			.dd{
+				width: 1350px;
+				height: 100px;
+				
+				position: relative;
+				top: 30px;
+				left: 250px;
+			}
+			.hr1{
+				width: 1340px;
+				position: relative;
+				top: 30px;
+				z-index: 100;
+			}
+			.hr2{
+				width: 1340px;
+				position: relative;
+				top: 30px;
+				z-index: 100;
+			}
+			.dd1{
+				width: 1200px;
+				height: 30px;
+				position: relative;
+				top: 32px;
+				left: 50px;
+				word-spacing: 10px;
+			}
+			.dd2{
+				width: 1200px;
+				height: 30px;
+				/* background-color: #0000FF; */
+				position: relative;
+				top: 35px;
+			}
+			.dd3{
+				width:500px ;
+				position: relative;
+				bottom: 20px;
+				left: 800px;
+			}
+			.biaoti{
+				width: 1660px;
+				height: 100px;
+				/* background-color: #0000FF; */
+			}
+			.logo2{
+				height: 66px;
+				width: 200px;
+				position: relative;
+				top: 20px;
+				left: 300px;
+			}
+			.mulu{
+				width: 1000px;
+				height: 80px;
+				/* background-color: #008000; */
+				position: relative;
+				bottom: 67px;
+				left: 500px;
+				word-spacing: 30px;
+				text-align: center;
+			}
+			.zhiyin>a:link{
+				color: #333333;
+			}
+			.zhiyin>a:visited{
+				color: #333333;
+			}
+			.zhiyin{
+				width: 100px;
+				height: 50px;
+				font-size: 1.5em;
+				display: inline-block;
+				position: relative;
+				top: 30px;
+			}
+			.mulu>li:hover a{
+				color: red;
+				padding-bottom: 15px;
+				border-bottom: 2px solid  #EC4B5E;
+			}
+			
+			.dd1>a:link{
+				color: white;
+				
+			}
+			.dd1>a:visited{
+				color: white;
+			}
+			.tou2>a:visited{
+				color: white;
+			}
+			.ttt>a:visited{
+				color: white;
+			}
+			.shuru{
+				width: 300px;
+				height: 300px;
+				/* background-color: #008000; */
+				position: relative;
+				left: 500px;
+				top: 200px;
+			}
+			.xx1{
+				width: 200px;
+				height: 80px;
+				background-color: red;
+				position: relative;
+				display: inline-block;
+				left: 300px;
+				border: 1px solid !important;
+				text-align: center;
+				font-size: 1.5em;
+				padding-top: 20px;
+				color: white;
+			}
+			.xx2{
+				width: 200px;
+				height: 80px;
+				background-color: red;
+				position: relative;
+				display: inline-block;
+				left: 295px;
+				border: 1px solid !important;
+				text-align: center;
+				font-size: 1.5em;
+				padding-top: 20px;
+				color: white;
+			}
+			.xx3{
+				width: 200px;
+				height: 80px;
+				background-color: red;
+				position: relative;
+				display: inline-block;
+				left: 290px;
+				border: 1px solid !important;
+				text-align: center;
+				font-size: 1.5em;
+				padding-top: 20px;
+				color: white;
+			}
+			.xx4{
+				width: 200px;
+				height: 80px;
+				background-color: red;
+				position: relative;
+				display: inline-block;
+				left: 285px;
+				border: 1px solid !important;
+				text-align: center;
+				font-size: 1.5em;
+				padding-top: 20px;
+				color: white;
+			}
+			.xyb{
+				width: 150px;
+				height: 80px;
+				background-color: red;
+				position: relative;
+				top: 50px;
+				left: 70px;
+				font-size: 1.5em;
+				text-align: center;
+				padding-top: 20px;
+			}
+			.xyb>a:link{
+				color: white;
+			}
+			.xyb>a:visited{
+				color: white;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div class="tou">
+			<div class="tou1">
+				<div class="logo">
+					<a href="#"><img src="img/sl_01.png" ></a>
+				</div>
+				<div class="ttt">
+					<a href="#" class="t1">客服热线 400-888-8888</a>
+				</div>
+				<div class="tou2">
+					<a href="#" class="t2">帮助中心</a>
+					<a href="#" class="t3">积分商城</a>
+				</div>
+			</div>
+			<div class="tou3">
+				<span href="#" class="t4">登录</span>
+				<span href="#" class="t5">注册</span>
+			</div>
+			
+		</div>
+		<div class="biaoti">
+			<div class="logo2">
+				<img src="img/sl_03.png" >
+			</div>
+			<div class="mulu">
+				<li class="zhiyin"><a href="#">首页</a></li>
+				<li class="zhiyin"><a href="#">我要投资</a></li>
+				<li class="zhiyin"><a href="#">我要借款</a></li>
+				<li class="zhiyin"><a href="#">新手指引</a></li>
+				<li class="zhiyin"><a href="#">问答专区</a></li>
+				<li class="zhiyin"><a href="#">关于我们</a></li>
+				<li class="zhiyin"><a href="#">我的账户</a></li>
+			</div>
+		</div>
+		
+		<div class="xx1"><p>1 填写账号信息</p></div>
+		<div class="xx2"><p>2 验证账户信息</p></div>
+		<div class="xx3"><p>3 重置密码</p></div>
+		<div class="xx4"><p>4 成功</p></div>
+		<div class="shuru">
+			<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+			    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+			    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+			    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+			<div class="input-group input-group-lg">
+			  <span class="input-group-addon" id="sizing-addon1">账号</span>
+			  <input type="text" class="form-control" placeholder="请输入你的账号" aria-describedby="sizing-addon1">
+			</div>
+			
+			<br>
+			<br>
+			<div class="input-group input-group-lg">
+				
+			  <input type="text" class="form-control" placeholder="请输入验证码" aria-describedby="sizing-addon1">
+				<p class="input-group-addon" id="sizing-addon1"><img src="img/dl_01(1).png"></p>
+			</div>
+			<div class="xyb"><a href="#">下一步</a></div>
+		</div>
+		
+		
+		<div class="di">
+			<div class="di1">
+				<div class="d1">
+				<img src="img/rh-di.png" >
+				<span>虹口区四平路421栋3号3棟b座2-3楼</span>
+				</div>
+				<div class="d2">
+					<img src="img/rh-ico.png" >
+					<span>咨询电话：400-888-6666</span>
+				</div>
+				<div class="d3">
+					<img src="img/duanx.png" >
+					<span>qijubao@service.com</span>
+				</div>
+			</div>	
+			
+			<div class="d4" id="ddd">
+				<img src="img/sl_05.png" >
+				<span>qijubao@service.com</span>
+				<div class="qq1">
+					<a href="#ddd"><img src="img/J-phone2.png"height="50px"></a>
+					
+				</div>
+				<!-- <div class="qq2">
+					<a href="#ddd"><img src="img/J-phone21.png"height="50px" ></a>
+				</div> -->
+				<div class="wx">
+					<a href="#ddd"><img src="img/J-weixin.png" ></a>
+				</div>
+				<div class="wb">
+					<a href="#ddd"><img src="img/J-weibo.png" ></a>
+				</div>
+			</div>
+		
+				
+			
+			
+			
+			<div class="youxia">
+				<div class="t6">
+					<p>投资理财</p>
+					<br>
+					<ul>
+						<a href="#">定存宝</a>
+						<br>
+						<br>
+						<a href="#">投资项目</a>
+						<br>
+						<br>
+						<a href="#">债权转让</a>
+					</ul>
+				</div>
+				<div class="t7">
+					<p>关于我们</p>
+					<br>
+					<ul>
+						<a href="#">公司简介</a>
+						<br>
+						<br>
+						<a href="#">管理团队</a>
+						<br>
+						<br>
+						<a href="#">联系我们</a>
+					</ul>
+				</div>
+				<div class="t8">
+					<p>帮助中心</p>
+					<br>
+					<ul>
+						<a href="#">常见问题</a>
+						
+						<br>
+						<br>
+						<a href="#">隐私保护</a>
+						<br>
+						<br>
+						<a href="#">使用条款</a>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="dd" id="dd">
+				<hr class="hr1">
+				<div class="dd1">
+					<span>友情链接：</span>
+					<a href="#dd">英科信息</a>
+					<a href="#dd">网贷中国</a>
+					<a href="#dd">网贷之家</a>
+					<a href="#dd">英科信息</a>
+					<a href="#dd">网贷中国</a>
+					<a href="#dd">网贷之家</a>
+					<a href="#dd">英科信息</a>
+					<a href="#dd">网贷中国</a>
+					<a href="#dd">网贷之家</a>
+					<a href="#dd">英科信息</a>
+					<a href="#dd">网贷中国</a>
+					<a href="#dd">网贷之家</a>
+					<a href="#dd">英科信息</a>
+				</div>
+				
+				<hr class="hr2">
+				<div class="dd2">
+					<img src="img/sl_29.png" >
+					<img src="img/sl_30.png" >
+					<img src="img/sl_31.png" >
+					<img src="img/sl_32.png" >
+					<div class="dd3">
+						<span>上海主林信息服务有限公司</span>
+						<span>版权所有</span>
+						<span>沪ICP备15044200号</span>
+					</div>
+					
+				</div>
+			</div>
+			
+		</div>
+	</body>
+</html>
